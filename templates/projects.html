@@ -5,16 +5,23 @@
 {% block headerLogo %}{% include 'headerLogo.html' %}{% endblock %}
 {% block styles %}{% include 'styles.html' %}{% endblock %}
 {% block content %}
+  <link rel="stylesheet" href="../css/imageModal.css">
   <h1 class="display-1 well" align="center">Projects</h1>
   <div class="well">
     {% for key, val in projectImages %}
       {% if val.type == "image" %}
-        <a id="myImg" class="fancybox" rel="group" href="{{val.src}}" title="{{val.title}}"><img src="{{val.src}}" alt="{{val.title}}" width="300" height="200"/></a>
+        <img id="myImg" class="imageClass" src="{{val.src}}" alt="{{val.title}}" width="300" height="200">
       {% elseif val.type == "video" %}
         <a id="myImg" class="various fancybox.iframe" href="http://www.youtube.com/embed/{{val.src}}?autoplay=1"><img src="http://img.youtube.com/vi/{{val.src}}/0.jpg" alt="{{val.title}}" width="300" height="200"/></a>
       {% endif %}
     {% endfor %}
   </div>
+  <div id="myModal" class="modal">
+    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  <script type="text/javascript" src="../js/fotoInModal.js"></script>
   <script type="text/javascript">
   	$(document).ready(function() {
   		$(".fancybox").fancybox();

@@ -7,7 +7,6 @@
     <link rel="icon" href="https://avatars0.githubusercontent.com/u/17063359?v=4&amp;s=200">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
@@ -15,7 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Add jQuery library -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Add mousewheel plugin (this is optional) -->
     <script type="text/javascript" src="../fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 
@@ -95,11 +94,12 @@
 
 
     
+  <link rel="stylesheet" href="../css/imageModal.css">
   <h1 class="display-1 well" align="center">Projects</h1>
   <div class="well">
     
       
-        <a id="myImg" class="fancybox" rel="group" href="../image/spidey.jpg" title="Spiderman in New York"><img src="../image/spidey.jpg" alt="Spiderman in New York" width="300" height="200"/></a>
+        <img id="myImg" class="imageClass" src="../image/spidey.jpg" alt="Spiderman in New York" width="300" height="200">
       
     
       
@@ -111,6 +111,12 @@
       
     
   </div>
+  <div id="myModal" class="modal">
+    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  <script type="text/javascript" src="../js/fotoInModal.js"></script>
   <script type="text/javascript">
   	$(document).ready(function() {
   		$(".fancybox").fancybox();
@@ -129,7 +135,6 @@
     	});
     });
   </script>
-
 
   </body>
 </html>

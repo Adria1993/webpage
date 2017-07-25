@@ -18,12 +18,11 @@ FileManagement.prototype.writeFile = function (path, data) {
       resolve(true);
     })
   });
-  // fs.writeFile(path, data,'utf8', function (err, success) {
-  //   if (err) {
-  //     return console.log(err);
-  //   }
-  //   console.log(success);
-  // });
+};
+FileManagement.prototype.createFolder = function (folder) {
+  if (!fs.existsSync(folder)){
+    fs.mkdirSync(folder);
+  }
 };
 
 module.exports = FileManagement;

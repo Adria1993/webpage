@@ -1,46 +1,35 @@
 var http = require('http'),
   swig = require('swig'),
   FileManagement = require('./class/FileManagement'),
-  listToCompile = ['./templates/index.html',"./templates/styles.html","./templates/projects.html"],
+  listToCompile = [{"src":"./templates/index.html", "type":"html", "name": "index"},
+  {"src": "./templates/styles.html", "type": "css", "name": "styles"},
+  {"src": "./templates/projects.html", "type": "html", "name":"projects" },
+  {"src": "./templates/imageModal.html", "type": "css", "name": "imageModal"}],
   open = require('open');
 
 const fileman = new FileManagement();
 
-
 function compileFiles(list){
+  var dir = ['./html/', './css/'];
+  dir.forEach((x) => {
+    fileman.createFolder(x);
+  });
   var promises = [];
   list.forEach((x) => {
-    var template = swig.compileFile(x);
+    var template = swig.compileFile(x.src);
     var rendered = template(fileman.readJson());
-    if(x == "./templates/styles.html"){
-      rendered = rendered.replace(/<[^>]*>/g,"");
-      var path = `${__dirname}/css/styles.css`;
-      promises.push(fileman.writeFile(path, rendered));
-    }else{
-      var path = `${__dirname}/html/${x.split("/")[2]}`;
-      promises.push(fileman.writeFile(path, rendered));
-    }
+    promises.push(saveFile(x, rendered));
   });
   Promise.all(promises).then((x) => {
     open("./html/projects.html", "firefox");
-  })
+  });
+}
+function saveFile(x, rendered){
+  var path = `${__dirname}/${x.type}/${x.name}.${x.type}`;
+  if(x.type == "css"){
+    rendered = rendered.replace(/<[^>]*>/g,"");
+  }
+  return fileman.writeFile(path, rendered);
 }
 
 compileFiles(listToCompile);
-
-
-// http.createServer(function (req, res) {
-//   var tmpl = swig.compileFile(__dirname + '/templates/index.html'),
-//   renderedHtml = tmpl(fileman.readJson());
-//   renderCSS();
-//   res.writeHead(200, { 'Content-Type': 'text/html' });
-//   res.end(renderedHtml);
-// }).listen(1337);
-//
-// function renderCSS(){
-//   var template = swig.compileFile("./templates/styles.html");
-//   var rendered = template(new FileManagement().readJson());
-//   rendered = rendered.replace(/<[^>]*>/g,"");
-//
-// }
-// console.log('Application Started on http://localhost:1337/');
