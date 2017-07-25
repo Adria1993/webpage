@@ -1,0 +1,28 @@
+{% block header %}
+<nav class="navbar navbar-default navbar-fixed-top">
+  <a class="navbar-brand" href="#">
+    <img style="max-width:30px; margin-top: -7px;"
+         src="{{ imageUrl}}">
+  </a>
+  </a>
+ <div class="container-fluid">
+   <div class="navbar-header">
+     <a class="navbar-brand" href="./index.html">{{title}}</a>
+   </div>
+   <ul class="nav navbar-nav">
+     {% for key, val in navButtons %}
+       <li class="nav-item">
+         <a class="nav-link" href="{{ val.src }}">{{val.name}}</a>
+       </li>
+     {% endfor %}
+   </ul>
+   <ul class="nav navbar-nav navbar-right">
+    {% for key, val in fontawesome %}
+     <li><a href="{{val.src}}"><i class="{{val.icon}}" aria-hidden="true"></i></a></li>
+     {% endfor %}
+   </ul>
+ </div>
+</nav>
+{% endblock %}
+{# {% block headerLogo %}
+{% endblock %} #}

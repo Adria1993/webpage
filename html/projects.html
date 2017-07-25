@@ -1,0 +1,135 @@
+
+  
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://avatars0.githubusercontent.com/u/17063359?v=4&amp;s=200">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="../fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="../fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="../fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="../fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="../fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="../fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="../fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="../fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));</script>
+    <title>Argochamber</title>
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+  <body>
+    
+<nav class="navbar navbar-default navbar-fixed-top">
+  <a class="navbar-brand" href="#">
+    <img style="max-width:30px; margin-top: -7px;"
+         src="https://avatars0.githubusercontent.com/u/17063359?v=4&amp;s=200">
+  </a>
+  </a>
+ <div class="container-fluid">
+   <div class="navbar-header">
+     <a class="navbar-brand" href="./index.html">Argochamber</a>
+   </div>
+   <ul class="nav navbar-nav">
+     
+       <li class="nav-item">
+         <a class="nav-link" href="./projects.html">Projects</a>
+       </li>
+     
+       <li class="nav-item">
+         <a class="nav-link" href="./contacts.html">Contacts</a>
+       </li>
+     
+       <li class="nav-item">
+         <a class="nav-link" href="./teams.html">Teams</a>
+       </li>
+     
+   </ul>
+   <ul class="nav navbar-nav navbar-right">
+    
+     <li><a href="https://www.facebook.com/argochamber/?ref=br_rs"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+     
+     <li><a href="https://twitter.com/argochamber"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+     
+   </ul>
+ </div>
+</nav>
+
+
+
+    
+  <div id="headerLogo">
+    <p id="text">Argochamber</p>
+  </div>
+
+
+    
+  <h1 class="display-1 well" align="center">Projects</h1>
+  <div class="well">
+    
+      
+        <a id="myImg" class="fancybox" rel="group" href="../image/spidey.jpg" title="Spiderman in New York"><img src="../image/spidey.jpg" alt="Spiderman in New York" width="300" height="200"/></a>
+      
+    
+      
+        <a id="myImg" class="various fancybox.iframe" href="http://www.youtube.com/embed/ALbt17LLH54?autoplay=1"><img src="http://img.youtube.com/vi/ALbt17LLH54/0.jpg" alt="Sculpting link" width="300" height="200"/></a>
+      
+    
+      
+        <a id="myImg" class="various fancybox.iframe" href="http://www.youtube.com/embed/1CQylxTtIIg?autoplay=1"><img src="http://img.youtube.com/vi/1CQylxTtIIg/0.jpg" alt="Thor Ragnarok" width="300" height="200"/></a>
+      
+    
+  </div>
+  <script type="text/javascript">
+  	$(document).ready(function() {
+  		$(".fancybox").fancybox();
+  	});
+    $(document).ready(function() {
+    	$(".various").fancybox({
+    		maxWidth	: 800,
+    		maxHeight	: 600,
+    		fitToView	: false,
+    		width		: '70%',
+    		height		: '70%',
+    		autoSize	: false,
+    		closeClick	: false,
+    		openEffect	: 'none',
+    		closeEffect	: 'none'
+    	});
+    });
+  </script>
+
+
+  </body>
+</html>

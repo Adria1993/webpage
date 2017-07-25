@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block header %}{% include 'header.html' %}{% endblock %}
+{% block headerLogo %}{% include 'headerLogo.html' %}{% endblock %}
+{% block styles %}{% include 'styles.html' %}{% endblock %}
+{% block content %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-9">
+        <h1> {{title}}</h1>
+        <p>{{indexContent}}</p>
+        <img id="indexImage" src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-9/13566955_259489337755518_4303437557084756703_n.jpg?oh=8f9a5633431ff3639e80fe991c80aa94&oe=5A06FA2F">
+        </img>
+      </div>
+      <div class="col-sm-3"> <a class="twitter-timeline" href="https://twitter.com/Argochamber">Tweets by Argochamber</a></div>
+    </div>
+  </div>
+
+{% endblock %}
+{% block footer%}{% include 'footer.html' %}{% endblock %}
