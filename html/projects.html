@@ -9,12 +9,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Add jQuery library -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Add mousewheel plugin (this is optional) -->
     <script type="text/javascript" src="../fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 
@@ -49,66 +46,138 @@
     <link rel="stylesheet" href="../css/styles.css">
   </head>
   <body>
+    <script>
+      $(document).ready(function(){
+            console.log("READY");
+      });
+    </script>
     
-<nav class="navbar navbar-default navbar-fixed-top">
-  <a class="navbar-brand" href="#">
-    <img style="max-width:30px; margin-top: -7px;"
-         src="https://avatars0.githubusercontent.com/u/17063359?v=4&amp;s=200">
-  </a>
-  </a>
- <div class="container-fluid">
-   <div class="navbar-header">
-     <a class="navbar-brand" href="./index.html">Argochamber</a>
-   </div>
-   <ul class="nav navbar-nav">
-     
-       <li class="nav-item">
-         <a class="nav-link" href="./projects.html">Projects</a>
-       </li>
-     
-       <li class="nav-item">
-         <a class="nav-link" href="./contacts.html">Contacts</a>
-       </li>
-     
-       <li class="nav-item">
-         <a class="nav-link" href="./teams.html">Teams</a>
-       </li>
-     
-   </ul>
-   <ul class="nav navbar-nav navbar-right">
-    
-     <li><a href="https://www.facebook.com/argochamber/?ref=br_rs"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-     
-     <li><a href="https://twitter.com/argochamber"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-     
-   </ul>
- </div>
-</nav>
+<div class="container-fluid main">
 
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img style="max-width:30px; margin-top: -7px;"
+               src="https://avatars0.githubusercontent.com/u/17063359?v=4&amp;s=200">
+        </a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="./index.html">Argochamber</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          
+            <li class="nav-item">
+              <a class="nav-link" href="./projects.html">Projects</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="./contacts.html">Contacts</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="./teams.html">Teams</a>
+            </li>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+         
+          <li><a href="https://www.facebook.com/argochamber/?ref=br_rs"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+          
+          <li><a href="https://twitter.com/argochamber"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-
-    
-  <div id="headerLogo">
-    <p id="text">Argochamber</p>
+  <div id="myCarousel" class="carousel carousel-fade slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <div class="item active background a"></div>
+      <div class="item background b"></div>
+      <div class="item background c"></div>
+    </div>
   </div>
+
+  <div class="covertext">
+    <div class="col-lg-10" style="float:none; margin:0 auto;">
+      <h1 class="title">Argochamber</h1>
+    </div>
+  </div>
+
+</div>
+<script src="../js/index.js">
+</script>
+<!-- <div class="navbar-wrapper">
+  <div class="container">
+    <nav class="navbar navbar-default navbar-static-top">
+      <a class="navbar-brand" href="#">
+        <img style="max-width:30px; margin-top: -7px;"
+             src="https://avatars0.githubusercontent.com/u/17063359?v=4&amp;s=200">
+      </a>
+      </a>
+     <div class="container-fluid">
+       <div class="navbar-header">
+         <a class="navbar-brand" href="./index.html">Argochamber</a>
+       </div>
+       <ul class="nav navbar-nav">
+         
+           <li class="nav-item">
+             <a class="nav-link" href="./projects.html">Projects</a>
+           </li>
+         
+           <li class="nav-item">
+             <a class="nav-link" href="./contacts.html">Contacts</a>
+           </li>
+         
+           <li class="nav-item">
+             <a class="nav-link" href="./teams.html">Teams</a>
+           </li>
+         
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+        
+         <li><a href="https://www.facebook.com/argochamber/?ref=br_rs"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+         
+         <li><a href="https://twitter.com/argochamber"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+         
+       </ul>
+     </div>
+    </nav>
+  </div>
+</div> -->
+
 
 
     
   <link rel="stylesheet" href="../css/imageModal.css">
   <h1 class="display-1 well" align="center">Projects</h1>
-  <div class="well">
+  <div class="container">
     
-      
-        <img id="myImg" class="imageClass" src="../image/spidey.jpg" alt="Spiderman in New York" width="300" height="200">
-      
-    
-      
-        <a id="myImg" class="various fancybox.iframe" href="http://www.youtube.com/embed/ALbt17LLH54?autoplay=1"><img src="http://img.youtube.com/vi/ALbt17LLH54/0.jpg" alt="Sculpting link" width="300" height="200"/></a>
-      
-    
-      
-        <a id="myImg" class="various fancybox.iframe" href="http://www.youtube.com/embed/1CQylxTtIIg?autoplay=1"><img src="http://img.youtube.com/vi/1CQylxTtIIg/0.jpg" alt="Thor Ragnarok" width="300" height="200"/></a>
-      
+      <div class="well row">
+        <h1>Jawaska</h1>
+        
+          <div class="col-xs-4 image-container">
+            <h5 align="center">Spiderman in New York</h5>
+            <img id="myImg" class="imageClass img-responsive" src="../image/spidey.jpg" alt="Spiderman in New York" width="300" height="200">
+          </div>
+        
+        
+          <div class="col-xs-4">
+            <h5 align="center">Sculpting link</h5>
+            <a class="various fancybox.iframe" href="http://www.youtube.com/embed/ALbt17LLH54?autoplay=1"><img id="myImg" class="img-responsive" src="http://img.youtube.com/vi/ALbt17LLH54/0.jpg" alt="" width="300" height="200"/></a>
+          </div>
+        
+          <div class="col-xs-4">
+            <h5 align="center">Thor Ragnarok</h5>
+            <a class="various fancybox.iframe" href="http://www.youtube.com/embed/1CQylxTtIIg?autoplay=1"><img id="myImg" class="img-responsive" src="http://img.youtube.com/vi/1CQylxTtIIg/0.jpg" alt="" width="300" height="200"/></a>
+          </div>
+        
+      </div>
     
   </div>
   <div id="myModal" class="modal">

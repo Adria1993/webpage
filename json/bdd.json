@@ -3,13 +3,15 @@
   "indexContent":"Was created in 2012, by Pablo Blanco Celdrán and Eric Dacal Sanchez, in order to create fun games and for the whole world.",
   "navButtons" : [{"name": "Projects", "src": "./projects.html"}, {"name": "Contacts", "src": "./contacts.html"},{"name": "Teams", "src":"./teams.html"}],
   "imageUrl" : "https://avatars0.githubusercontent.com/u/17063359?v=4&s=200",
-  "imageHeaderLogo" : "https://images2.alphacoders.com/698/698137.jpg",
+  "backgroundA": "../image/main.jpg",
+  "backgroundB": "../image/super.jpg",
+  "backgroundC": "../image/jobs.jpg",
   "headerNavBar": "navbar-light bg-primary",
   "fontawesome": [{"icon": "fa fa-facebook-official", "src": "https://www.facebook.com/argochamber/?ref=br_rs"},
   {"icon": "fa fa-twitter-square", "src": "https://twitter.com/argochamber"}],
-  "projectImages":[{"title": "Spiderman in New York", "src": "../image/spidey.jpg", "type": "image"},
-  {"title": "Sculpting link", "src":"ALbt17LLH54", "type": "video"},
-  {"title": "Thor Ragnarok", "src":"1CQylxTtIIg", "type":"video"}],
+  "projects":[{"name": "Jawaska", "images": [{"title": "Spiderman in New York", "src": "../image/spidey.jpg", "type": "image"}],
+  "videos": [{"title": "Sculpting link", "src":"ALbt17LLH54", "type": "video"},{"title": "Thor Ragnarok", "src":"1CQylxTtIIg", "type":"video"}]
+  }],
   "css": {
     "headerTextColor": "white",
     "headerFontSize": "36px"

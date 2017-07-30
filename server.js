@@ -21,7 +21,7 @@ function compileFiles(list){
     promises.push(saveFile(x, rendered));
   });
   Promise.all(promises).then((x) => {
-    open("./html/projects.html", "firefox");
+    open("./html/index.html", "firefox");
   });
 }
 function saveFile(x, rendered){

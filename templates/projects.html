@@ -7,13 +7,23 @@
 {% block content %}
   <link rel="stylesheet" href="../css/imageModal.css">
   <h1 class="display-1 well" align="center">Projects</h1>
-  <div class="well">
-    {% for key, val in projectImages %}
-      {% if val.type == "image" %}
-        <img id="myImg" class="imageClass" src="{{val.src}}" alt="{{val.title}}" width="300" height="200">
-      {% elseif val.type == "video" %}
-        <a id="myImg" class="various fancybox.iframe" href="http://www.youtube.com/embed/{{val.src}}?autoplay=1"><img src="http://img.youtube.com/vi/{{val.src}}/0.jpg" alt="{{val.title}}" width="300" height="200"/></a>
-      {% endif %}
+  <div class="container">
+    {% for key, val in projects %}
+      <div class="well row">
+        <h1>{{val.name}}</h1>
+        {% for k, v in val.images %}
+          <div class="col-xs-4 image-container">
+            <h5 align="center">{{v.title}}</h5>
+            <img id="myImg" class="imageClass img-responsive" src="{{v.src}}" alt="{{v.title}}" width="300" height="200">
+          </div>
+        {% endfor %}
+        {% for k, v in val.videos %}
+          <div class="col-xs-4">
+            <h5 align="center">{{v.title}}</h5>
+            <a class="various fancybox.iframe" href="http://www.youtube.com/embed/{{v.src}}?autoplay=1"><img id="myImg" class="img-responsive" src="http://img.youtube.com/vi/{{v.src}}/0.jpg" alt="{{val.title}}" width="300" height="200"/></a>
+          </div>
+        {% endfor %}
+      </div>
     {% endfor %}
   </div>
   <div id="myModal" class="modal">
