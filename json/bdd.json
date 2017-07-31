@@ -1,7 +1,7 @@
 {
   "title": "Argochamber",
   "indexContent":"Was created in 2012, by Pablo Blanco Celdrán and Eric Dacal Sanchez, in order to create fun games and for the whole world.",
-  "navButtons" : [{"name": "Projects", "src": "./projects.html"}, {"name": "Contacts", "src": "./contacts.html"},{"name": "Teams", "src":"./teams.html"}],
+  "navButtons" : [{"name": "Projects", "src": "./projects.html"}, {"name": "Contacts", "src": "./contacts.html"}],
   "imageUrl" : "https://avatars0.githubusercontent.com/u/17063359?v=4&s=200",
   "backgroundA": "../image/main.jpg",
   "backgroundB": "../image/super.jpg",
@@ -12,6 +12,8 @@
   "projects":[{"name": "Jawaska", "images": [{"title": "Spiderman in New York", "src": "../image/spidey.jpg", "type": "image"}],
   "videos": [{"title": "Sculpting link", "src":"ALbt17LLH54", "type": "video"},{"title": "Thor Ragnarok", "src":"1CQylxTtIIg", "type":"video"}]
   }],
+  "contacts": [{"name": "Eric Dacal Sanchez", "job": "Programmer", "mail": "ericdacal@gmail.com", "img": null},
+  {"name": "Pablo Blanco Celdrán", "job": "Programmer", "mail": "pablobc.1995@gmail.com", "img": "https://lh3.googleusercontent.com/-lLU4TZgsppk/AAAAAAAAAAI/AAAAAAAACkw/9ENfJsjfrW8/s60-p-no/photo.jpg"}],
   "css": {
     "headerTextColor": "white",
     "headerFontSize": "36px"

@@ -1,4 +1,7 @@
 const fs = require('fs');
+var ncp = require('ncp').ncp;
+ncp.limit = 16;
+
 const path = "./json/bdd.json";
 var FileManagement = function(){
 
@@ -25,4 +28,14 @@ FileManagement.prototype.createFolder = function (folder) {
   }
 };
 
+FileManagement.prototype.copyFile = function (source, target) {
+  return new Promise((resolve, reject) => {
+    ncp(source, target, function (err) {
+     if (err) {
+       reject(err);
+     }
+      resolve(`${source} folder copied`);
+    });
+  });
+}
 module.exports = FileManagement;
