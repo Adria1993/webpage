@@ -1,7 +1,7 @@
 {
   "title": "Argochamber",
   "indexContent":"Was created in 2012, by Pablo Blanco Celdrán and Eric Dacal Sanchez, in order to create fun games and for the whole world.",
-  "navButtons" : [{"name": "Projects", "src": "./projects.html"}, {"name": "Contacts", "src": "./contacts.html"}],
+  "navButtons" : [{"name": "Projects", "src": "./projects.html"}, {"name": "Team", "src": "./contacts.html"}],
   "imageUrl" : "https://avatars0.githubusercontent.com/u/17063359?v=4&s=200",
   "backgroundA": "../image/main.jpg",
   "backgroundB": "../image/super.jpg",
@@ -9,11 +9,13 @@
   "headerNavBar": "navbar-light bg-primary",
   "fontawesome": [{"icon": "fa fa-facebook-official", "src": "https://www.facebook.com/argochamber/?ref=br_rs"},
   {"icon": "fa fa-twitter-square", "src": "https://twitter.com/argochamber"}],
-  "projects":[{"name": "Jawaska", "images": [{"title": "Spiderman in New York", "src": "../image/spidey.jpg", "type": "image"}],
-  "videos": [{"title": "Sculpting link", "src":"ALbt17LLH54", "type": "video"},{"title": "Thor Ragnarok", "src":"1CQylxTtIIg", "type":"video"}]
+  "projects":[{"name": "Fate of Atlantis", "images": [{"title": "Modeling", "src": "../image/Fate Of Atlantis/fa1.png", "type": "image"},{"title": "Modeling", "src": "../image/Fate Of Atlantis/fa2.png", "type": "image"},{"title": "Modeling", "src": "../image/Fate Of Atlantis/fa3.png", "type": "image"},{"title": "Modeling", "src": "../image/Fate Of Atlantis/fa4.jpg", "type": "image"},{"title": "First Level development", "src": "../image/Fate Of Atlantis/fa5.jpg", "type": "image"},{"title": "First Level development", "src": "../image/Fate Of Atlantis/fa6.jpg", "type": "image"},{"title": "First Level development", "src": "../image/Fate Of Atlantis/fa7.jpg", "type": "image"},{"title": "First Level development", "src": "../image/Fate Of Atlantis/fa8.jpg", "type": "image"}],
+  "videos": [{"title": "First Level development", "src":"_aipsjLd1-8", "type": "video"}]
+  }, {"name": "V2000", "images": [{"title": "Modeling", "src": "../image/V2000/V2_1.png", "type": "image"},{"title": "Landscape Design", "src": "../image/V2000/V2_2.png", "type": "image"},{"title": "First Level Design", "src": "../image/V2000/V2_3.jpeg", "type": "image"}],
+  "videos": []
   }],
-  "contacts": [{"name": "Eric Dacal Sanchez", "job": "Programmer", "mail": "ericdacal@gmail.com", "img": null},
-  {"name": "Pablo Blanco Celdrán", "job": "Programmer", "mail": "pablobc.1995@gmail.com", "img": "https://lh3.googleusercontent.com/-lLU4TZgsppk/AAAAAAAAAAI/AAAAAAAACkw/9ENfJsjfrW8/s60-p-no/photo.jpg"}],
+  "contacts": [{"name": "Eric Dacal Sanchez", "job": "Founder, Programmer and Artist", "mail": "ericdacal@gmail.com", "img": null}, {"name": "Adria Cabezuelo Roiget", "job": "Web Programmer", "mail": "adria.cabezuelo@gmail.com", "img": null}, {"name": "Alberto Blanco Celdran", "job": "Programmer", "mail": "patillado@gmail.com", "img": null},
+  {"name": "Pablo Blanco Celdrán", "job": "Founder, Programmer and Artist", "mail": "pablobc.1995@gmail.com", "img": null}],
   "css": {
     "headerTextColor": "white",
     "headerFontSize": "36px"
