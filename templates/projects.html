@@ -10,9 +10,9 @@
   <div class="container">
     {% for key, val in projects %}
       <div class="well row">
-        <h1>{{val.name}}</h1>
+        <h1 class="well" align="center">{{val.name}}</h1>
         {% for k, v in val.images %}
-          <div class="col-xs-4 image-container">
+          <div class="col-xs-4">
             <h5 align="center">{{v.title}}</h5>
             <img id="myImg" class="imageClass img-responsive" src="{{v.src}}" alt="{{v.title}}" width="300" height="200">
           </div>

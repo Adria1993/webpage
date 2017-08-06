@@ -11,10 +11,11 @@
   {"icon": "fa fa-twitter-square", "src": "https://twitter.com/argochamber"}],
   "projects":[{"name": "Fate of Atlantis", "images": [{"title": "Modeling", "src": "../image/Fate Of Atlantis/fa1.png", "type": "image"},{"title": "Modeling", "src": "../image/Fate Of Atlantis/fa2.png", "type": "image"},{"title": "Modeling", "src": "../image/Fate Of Atlantis/fa3.png", "type": "image"},{"title": "Modeling", "src": "../image/Fate Of Atlantis/fa4.jpg", "type": "image"},{"title": "First Level development", "src": "../image/Fate Of Atlantis/fa5.jpg", "type": "image"},{"title": "First Level development", "src": "../image/Fate Of Atlantis/fa6.jpg", "type": "image"},{"title": "First Level development", "src": "../image/Fate Of Atlantis/fa7.jpg", "type": "image"},{"title": "First Level development", "src": "../image/Fate Of Atlantis/fa8.jpg", "type": "image"}],
   "videos": [{"title": "First Level development", "src":"_aipsjLd1-8", "type": "video"}]
-  }, {"name": "V2000", "images": [{"title": "Modeling", "src": "../image/V2000/V2_1.png", "type": "image"},{"title": "Landscape Design", "src": "../image/V2000/V2_2.png", "type": "image"},{"title": "First Level Design", "src": "../image/V2000/V2_3.jpeg", "type": "image"}],
-  "videos": []
+  }, {"name": "V2000", "images": [{"title": "Modeling", "src": "../image/V2000/V2_1.png", "type": "image"},
+  {"title": "Landscape Design", "src": "../image/V2000/V2_2.png", "type": "image"},
+  {"title": "First Level Design", "src": "../image/V2000/V2_3.jpeg", "type": "image"}],"videos": []
   }],
-  "contacts": [{"name": "Eric Dacal Sanchez", "job": "Founder, Programmer and Artist", "mail": "ericdacal@gmail.com", "img": null}, {"name": "Adria Cabezuelo Roiget", "job": "Web Programmer", "mail": "adria.cabezuelo@gmail.com", "img": null}, {"name": "Alberto Blanco Celdran", "job": "Programmer", "mail": "patillado@gmail.com", "img": null},
+  "contacts": [{"name": "Eric Dacal Sanchez", "job": "Founder, Programmer and Artist", "mail": "ericdacal@gmail.com", "img": null}, {"name": "Adrià Cabezuelo Roiget", "job": "Web Programmer", "mail": "adria.cabezuelo@gmail.com", "img": null}, {"name": "Alberto Blanco Celdrán", "job": "Programmer", "mail": "flaberto.abc@gmail.com", "img": null},
   {"name": "Pablo Blanco Celdrán", "job": "Founder, Programmer and Artist", "mail": "pablobc.1995@gmail.com", "img": null}],
   "css": {
     "headerTextColor": "white",
