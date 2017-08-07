@@ -13,13 +13,13 @@
         <h1 class="well" align="center">{{val.name}}</h1>
         {% for k, v in val.images %}
           <div class="col-xs-4">
-            <h5 align="center">{{v.title}}</h5>
-            <img id="myImg" class="imageClass img-responsive" src="{{v.src}}" alt="{{v.title}}" width="300" height="200">
+            <h5>{{v.title}}</h5>
+            <img id="myImg" class="imageClass" src="{{v.src}}" alt="{{v.title}}" width="300" height="200">
           </div>
         {% endfor %}
         {% for k, v in val.videos %}
           <div class="col-xs-4">
-            <h5 align="center">{{v.title}}</h5>
+            <h5>{{v.title}}</h5>
             <a class="various fancybox.iframe" href="http://www.youtube.com/embed/{{v.src}}?autoplay=1"><img id="myImg" class="img-responsive" src="http://img.youtube.com/vi/{{v.src}}/0.jpg" alt="{{val.title}}" width="300" height="200"/></a>
           </div>
         {% endfor %}
